@@ -1,0 +1,182 @@
+\documentclass[11pt]{article}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{multirow}
+\usepackage{xparse}
+\usepackage{amsmath}
+\usepackage[BoldFont]{xeCJK}
+\usepackage[most]{tcolorbox}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+
+\renewcommand\thesection{Question \ \arabic{section}}
+\renewcommand\thesubsection{\arabic{section}-(\alph{subsection})}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={習題3 },
+    pdfpagemode=FullScreen,
+}
+\usepackage[a4paper, margin={3cm}]{geometry}
+\linespread{1.15}
+\lstset{language=C,keywordstyle={\bfseries \color{blue}}}
+	
+
+\title{習題3 \\\Large 總體經濟學原理與實習}
+\author{B10703033\ 財金一\ 邱奕璉
+\\ B10703103\ 財金一\ 許羽婷
+\\ B10705007\ 資管一\ 劉冠甫
+\\ B10705047\ 資管一\ 邱秉辰}
+\date{March 18, 2022}
+
+\setlength{\parindent}{0em}
+\setlength{\parskip}{0.5em}
+
+\setCJKmainfont{GenRyuMin TW}
+\begin{document}
+
+
+
+\maketitle
+
+% Question 1
+\section{} 
+\subsection{}
+59,398 國際元，全球排名第 15 名。
+
+\href{https://bit.ly/36sWRVc}{此排名之參考網頁} 
+\subsection{}
+若依據先比較IMF、再比較World Bank，再比較CIA之順序，其GDP(PPP) per capita 之排名為
+\begin{itemize}
+    \item 第一名：列支敦士登
+    \item 第二名：盧森堡
+    \item 第三名：摩納哥
+\end{itemize}
+補充：若僅比較IMF，其GDP(PPP) per capita 之排名為
+\begin{itemize}
+    \item 第一名：盧森堡  
+    \item 第二名：新加坡
+    \item 第三名：愛爾蘭
+\end{itemize}
+\href{https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(PPP)_per_capita}{此排名之參考網頁} 
+
+\subsection{}
+\begin{itemize}
+    \item 日本：名目上第 27 名，若包含歐盟與港澳台，為第30名
+    \item 南韓：名目上第 25 名，若包含港澳台，為第28名
+    \item 人均 GDP 對台灣的比例：日本：0.75 / 韓國：0.79
+\end{itemize}
+\href{https://bit.ly/36sWRVc}{此排名之參考網頁} 
+
+\section{}
+\subsection{}
+$$\frac{200\times 0.7 + 900}{1000} - 1 = 0.04$$
+\subsection{}
+$$\text{報酬率} 4\%<\text{借貸利率} 5\% \implies \text{不會投資}$$
+
+
+\section{}
+\subsection{}
+\begin{enumerate}
+    \item 有效的疫情防控措施，在不封城的情況下，服務業得以如常運作及發展。
+\item 台灣的製造業在疫情期間迎合了國際的需求，出口量增加。
+\item  中美貿易戰的大環境下，許多在大陸的台商為了避免關稅壓力，選擇回台灣投資設廠。
+\end{enumerate}
+\subsection{}
+「紅色供應鏈」意指中國大陸想要減少對外進口電子零組件的依賴，投資國內廠商研發並生產，希望將科技產品生產的供應鏈全部移入國內。
+
+與中國大陸的競爭造成了台灣內部的薪資停滯，推測中國大陸的薪資較為台灣低廉，吸引台商前往中國大陸設廠。
+
+
+\section{}
+\subsection{}
+$$
+Y = A\sqrt{L\cdot K} \\
+\ln Y = \ln A + \frac{1}{2} \ln L + \frac{1}{2} \ln K  
+$$ 
+$$
+\implies \frac{d\ln Y}{dt} = \frac{d\ln A}{dt} + \frac{1}{2}\frac{d\ln L}{dt} + \frac{1}{2}\frac{d\ln K}{dt} 
+$$
+Since 
+$$
+\frac{d \ln Y}{dt} = \frac{(dY/dt)}{Y} \implies \frac{\Delta Y}{Y} 
+$$
+Hence 
+$$
+\frac{\Delta Y}{Y} = \frac{\Delta A}{A} + \frac{1}{2}\frac{\Delta K}{K} +  \frac{1}{2}\frac{\Delta L}{L}
+$$
+由題目敘述，所求
+$$
+\frac{\Delta Y}{Y} = 0.003 + \frac{1}{2}(0.01+0.02) = 0.018\ (\text{or } 1.8\%)
+$$
+
+\subsection{}
+$$
+y \equiv \frac{Y}{L} \ , \text{and } Y = A\sqrt{L\cdot K}
+\\ \implies y = A\frac{\sqrt{L \cdot K}}{L} = A\sqrt{\frac{K}{L}}
+$$
+我們對該式取自然對數
+
+$$
+\ln y = \ln A + \frac{1}{2} \ln{K} - \frac{1}{2} \ln{L} \\
+\implies \frac{\Delta y}{y} = \frac{\Delta A}{A} + \frac{1}{2}\frac{\Delta K}{K} -  \frac{1}{2}\frac{\Delta L}{L}
+$$
+
+由題目敘述，所求
+
+$$
+\frac{\Delta y}{y} = 0.003 + \frac{1}{2}(0.02-0.01) = 0.008 \ (\text{or} \ 0.8\%)
+$$
+
+\subsection{}
+
+$$
+y = \frac{Y}{L} = \frac{Y}{H \times N} = \frac{Y}{H \times \varphi \times \hat{N}}
+$$
+
+Since $Y / \hat{N}$ is GDP per capita, and $H, \varphi$ has small rates of change
+
+$$
+y = k\times GDP_{per\_capita} = k \hat{y}
+$$
+
+Where $k$  is a constant
+
+$$
+ \frac{\Delta y}{y}  \approx  \frac{\Delta \hat{y}}{\hat{y}}
+$$
+
+Hence, the answer is the same as 4(b), which is $0.008(\text{or} \ 0.8\%)$
+
+\section{}
+\subsection{}
+\begin{itemize}
+    \item 2000 至 2009年 新興經濟體的人均 GDP 成長率：7.6\%
+    \item 富裕國家的人均 GDP 成長率： 3.1\%
+    \item 根據文章 “As a result of that difference the gap between the developed and developing worlds narrowed quickly.” 可知所得水準正在趨近
+\end{itemize}
+
+\subsection{}
+差異擴大
+
+Such a convergence (the convergence between rich and emerging countries in the early 21th century) would represent an historic change rivalled in its scope only by the extraordinary industrialisation that opened the global gaps between the rich and the rest in the first place, and completely unprecedented in its pace.
+
+In 1997, just before the great catch-up got into its swing, the World Bank’s senior economist, Lant Pritchett, described a widening income gap between rich and poor countries as “the dominant feature of modern economic history”. 
+
+Prior to the late 1990s poor countries growing faster than rich ones were rare, and doing it persistently was rarer still. From the mid-1940s to the mid-1990s less than a third of developing economies were growing faster than the rich world at any one time. In any given economy one decade’s gains were often reversed in the next.
+
+\subsection{}
+在較貧窮的國家，MPK（資本邊際產量）高，使資本流向較貧窮的國家，使得該國成長率上升，讓其所得水準與較富裕國家趨近
+
+\subsection{}
+工資低的另外一個說法為資本邊際產量高，因為台灣在 1960 - 1980 年代資本邊際產量高，報酬率因此較高，故吸引國外廠商來台投資，符合 Solow 的成長模型。
+
+\subsection{}
+新興技術一經開發也會讓較為貧窮的國家採用，再者，因為富裕國家已經有運用新興科技的先例，因此較為貧窮的國家可以直接且更有效率的運用這項新興的技術，故不至於使富國與窮國的差距擴大。
+
+
+\end{document}
