@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.3.18)  22 APR 2022 16:12
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.3.18)  22 APR 2022 16:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -896,23 +896,22 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 66.
 File: ./image//3a.png Graphic file (type bmp)
 <./image//3a.png>
- [2] [3] (./hw6.aux)
 
-Package rerunfilecheck Warning: File `hw6.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+Overfull \hbox (39.95125pt too wide) in paragraph at lines 73--74
+ [][] 
+ []
 
-Package rerunfilecheck Info: Checksums for `hw6.out':
-(rerunfilecheck)             Before: 1001686AD5B18B7455B033A2E829F659;315
-(rerunfilecheck)             After:  2191A2C5EBBFA31806B1BCB55FB13952;835.
+[2] [3] (./hw6.aux)
+Package rerunfilecheck Info: File `hw6.out' has not changed.
+(rerunfilecheck)             Checksum: 2191A2C5EBBFA31806B1BCB55FB13952;835.
  ) 
 Here is how much of TeX's memory you used:
- 29282 strings out of 476919
- 639228 string characters out of 5821840
+ 29284 strings out of 476919
+ 639250 string characters out of 5821840
  1218899 words of memory out of 5000000
- 48781 multiletter control sequences out of 15000+600000
+ 48783 multiletter control sequences out of 15000+600000
  439875 words of font info for 61 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 112i,6n,116p,707b,339s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 112i,6n,116p,707b,409s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on hw6.pdf (3 pages).
